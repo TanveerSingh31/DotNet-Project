@@ -27,6 +27,14 @@ namespace first_project.Controllers
             return View(student);
         }
 
+        // /student
+        public IActionResult GetStudentView2()
+        {
+            // { Name= "Tanveer", Age=25 } -> giving this creates new record in table
+            var student = new Student() { Name = "Tanveer", Age = 25 };
+            return View(student);
+        }
+
 
 
         // /student

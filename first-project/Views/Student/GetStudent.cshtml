@@ -1,11 +1,40 @@
-﻿@model first_project.Models.Student
-@*/* what is a directive? */*@
+﻿@* Directive *@
+
+@model first_project.Models.Student
+
 
 
 @{
+    // variables are declared here !!
+
     // We can declare & provide values to variables in this block , which can in turn be used in html below.
     // This helps use to provide dynamic values to the html webpages.
-
+    var message = "Good Morning";
+    var items = new List<int> { 1, 2, 3 };
+    bool isLoggedIn = false;
 }
 
+
+@* @ = syntax is used to access the value of variables declared *@
+
 <p>This is the student that was added @Model.Name </p>
+
+<p>@message </p>
+
+
+
+@if (isLoggedIn)
+    {<p>You are currently logged in</p>;}
+else
+{
+    <p>Not logged in</p>
+}
+
+
+
+<ul>
+    @foreach (var i in @items)
+    {
+        <li>This is number = @i</li>
+    }
+</ul>
