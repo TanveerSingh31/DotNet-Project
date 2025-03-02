@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{F3F8327F-8B22-4E5D-9B4E-A0B4BAE45669}|Default">
+  <MonoDevelop.Ide.ItemProperties.first-project PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="first-project/Controllers/StudentController.cs">
+    <Files>
+      <File FileName="first-project/Models/Student.cs" />
+      <File FileName="first-project/Controllers/StudentController.cs" Line="14" Column="1" />
+      <File FileName="first-project/Program.cs" />
+      <File FileName="first-project/Controllers/HomeController.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
