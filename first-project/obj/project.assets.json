@@ -502,6 +502,37 @@
           }
         }
       },
+      "MySqlConnector/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "[6.0.0, 7.0.0)",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "MySqlConnector": "2.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1515,6 +1546,49 @@
         "version.txt"
       ]
     },
+    "MySqlConnector/2.0.0": {
+      "sha512": "EY0KXqQas+QvdZQU0NPkqBSfJitWAl8IUCg0v/Qn0P7f/KApJTFJFm8czYWoDPyewUjPHrAnE/cSYzzSFGc8Ng==",
+      "type": "package",
+      "path": "mysqlconnector/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.0.0.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.0": {
+      "sha512": "iWloXFjpN6BllZA9oPqZTW9mNtFV5Q6DFv0WwFyh1IuOJ71btS3ifTwpLmaFXSlXzuEU9o7Rul0dU0WiwkOq0Q==",
+      "type": "package",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.6.0.0.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.nuspec"
+      ]
+    },
     "System.Collections.Immutable/6.0.0": {
       "sha512": "l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
       "type": "package",
@@ -2004,29 +2078,31 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
+      "Pomelo.EntityFrameworkCore.MySql >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/tanveersingh/.nuget/packages/": {}
+    "C:\\Users\\tanveer.singh1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tanveersingh/Projects/first-project/first-project/first-project.csproj",
+      "projectUniqueName": "C:\\DotNet-Project\\first-project\\first-project.csproj",
       "projectName": "first-project",
-      "projectPath": "/Users/tanveersingh/Projects/first-project/first-project/first-project.csproj",
-      "packagesPath": "/Users/tanveersingh/.nuget/packages/",
-      "outputPath": "/Users/tanveersingh/Projects/first-project/first-project/obj/",
+      "projectPath": "C:\\DotNet-Project\\first-project\\first-project.csproj",
+      "packagesPath": "C:\\Users\\tanveer.singh1\\.nuget\\packages\\",
+      "outputPath": "C:\\DotNet-Project\\first-project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/tanveersingh/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\tanveer.singh1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.317/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2058,6 +2134,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "Pomelo.EntityFrameworkCore.MySql": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [
@@ -2071,20 +2151,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.osx-arm64",
-            "version": "[6.0.31, 6.0.31]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2093,7 +2159,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

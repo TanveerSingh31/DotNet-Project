@@ -27,6 +27,7 @@ namespace first_project.Controllers
             return View(student);
         }
 
+
         // /student
         public IActionResult GetStudentView2()
         {

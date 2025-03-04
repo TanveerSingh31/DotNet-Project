@@ -1,11 +1,16 @@
 ﻿using first_project.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString");
 builder.Services.AddDbContext<MyAppContext>(options =>
-.options.useSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
 
 var app = builder.Build();
 
